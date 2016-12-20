@@ -4,8 +4,32 @@
 	"completions":
 	[
 		{ "trigger": "skynet.new", "contents": "skynet.newservice(\"${1}\")" },
-		{ "trigger": "comment", "contents": "--[[\n\t${1}\n--]]" },
-		{ "trigger": "mainhead", "contents": "local skynet = require \"skynet\"\nlocal sprotoloader = require \"sprotoloader\"\nlocal cluster = require \"cluster\"\nrequire \"skynet.manager\"\n" },
+		{ "trigger": "skynet.uni", "contents": "skynet.uniqueservice(\"${1}\")" },
+		{ "trigger": "skynet.reg", "contents": "skynet.register(\"${1}\")" },
+		{ "trigger": "skynet.cal", "contents": "skynet.call(${1},\"lua\",\"${2}\")" },
+		{ "trigger": "skynet.sen", "contents": "skynet.send(${1},\"lua\",\"${2}\")" },
+		{ "trigger": "skynet.err", "contents": "skynet.error(string.format(\"${1}\"))" },
+
+		{ "trigger": "cluster.ope", "contents": "cluster.open(\"${1}\")" },
+		{ "trigger": "cluster.pro", "contents": "cluster.proxy(\"${1}\", \"${2}\")" },
+		{ "trigger": "cluster.cal", "contents": "cluster.call(\"${1}\", \"${2}\", \"${3}\")" },
+
+		{ "trigger": "com", "contents": "--[[\n\t${1}\n--]]" },
+		{ "trigger": "mai", "contents": "local skynet = require \"skynet\"\nlocal sprotoloader = require \"sprotoloader\"\nlocal cluster = require \"cluster\"\nrequire \"skynet.manager\"\n" },
+		{ "trigger": "for", "contents": "for k, v in paris(\"${1}\") do\n\t\nend" },
+		{ "trigger": "whi", "contents": "while ${1} do\n\t\nend" },
+		{ "trigger": "pro", "contents": "local host = sprotoloader.load(1):host \"package\"\nlocal send_request = host:attach(sprotoloader.load(2))" },
+		{ "trigger": "pri", "contents": "print(${1})" },
+
+		{ "trigger": "fcmd", "contents": "function CMD.${1}(${2})\n\t\nend" },
+		{ "trigger": "freq", "contents": "function REQUEST:${1}(${2})\n\t\nend" },
+		{ "trigger": "fres", "contents": "function RESPONE:${1}(${2})\n\t\nend" },
+		{ "trigger": "req",  "contents": "require \"${1}\"" },
+
+		{ "trigger": "sql",  "contents": "local sql = string.format(\"${1}\", )" },
+		{ "trigger": "sqls", "contents": "select ${1} from ${2} where ${3}=${4}" },
+		{ "trigger": "sqli", "contents": "insert into ${1} values(${2})" },
+		{ "trigger": "sqlu", "contents": "update ${1} set ${2}=${3} where ${4}=${5}" },
 
 	]
 }
