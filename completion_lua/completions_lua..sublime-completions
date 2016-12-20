@@ -16,10 +16,9 @@
 
 		{ "trigger": "com", "contents": "--[[\n\t${1}\n--]]" },
 		{ "trigger": "mai", "contents": "local skynet = require \"skynet\"\nlocal sprotoloader = require \"sprotoloader\"\nlocal cluster = require \"cluster\"\nrequire \"skynet.manager\"\n" },
-		{ "trigger": "for", "contents": "for k, v in paris(\"${1}\") do\n\t\nend" },
+		{ "trigger": "for", "contents": "for k, v in paris(${1}) do\n\t\nend" },
 		{ "trigger": "whi", "contents": "while ${1} do\n\t\nend" },
 		{ "trigger": "pro", "contents": "local host = sprotoloader.load(1):host \"package\"\nlocal send_request = host:attach(sprotoloader.load(2))" },
-		{ "trigger": "pri", "contents": "print(${1})" },
 
 		{ "trigger": "fcmd", "contents": "function CMD.${1}(${2})\n\t\nend" },
 		{ "trigger": "freq", "contents": "function REQUEST:${1}(${2})\n\t\nend" },
@@ -31,5 +30,8 @@
 		{ "trigger": "sqli", "contents": "insert into ${1} values(${2})" },
 		{ "trigger": "sqlu", "contents": "update ${1} set ${2}=${3} where ${4}=${5}" },
 
+		{ "trigger": "pri", "contents": "print(${1})" },
+		{ "trigger": "prii", "contents": "printI(${1})" },
+		{ "trigger": "prie", "contents": "printE(${1})" },
 	]
 }
