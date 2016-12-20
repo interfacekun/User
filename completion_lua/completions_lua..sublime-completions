@@ -1,0 +1,11 @@
+{
+	"scope": "source.lua",
+
+	"completions":
+	[
+		{ "trigger": "skynet.new", "contents": "skynet.newservice(\"${1}\")" },
+		{ "trigger": "comment", "contents": "--[[\n\t${1}\n--]]" },
+		{ "trigger": "mainhead", "contents": "local skynet = require \"skynet\"\nlocal sprotoloader = require \"sprotoloader\"\nlocal cluster = require \"cluster\"\nrequire \"skynet.manager\"\n" },
+
+	]
+}
