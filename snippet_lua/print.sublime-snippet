@@ -1,12 +1,12 @@
 <snippet>
 	<content><![CDATA[
 local function printI(str, ...)
-	skynet.error(string.format(str, ...))
+	skynet.error("[INFO]", string.format(str, ...))
 	LOG_INFO(str, ...)
 end
 
 local function printE(str, ...)
-	skynet.error(string.format(str, ...))
+	skynet.error("[ERROR]", string.format(str, ...))
 	LOG_ERROR(str, ...)
 end
 
