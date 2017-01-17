@@ -4,5 +4,11 @@
 		"keys": [
 			"alt+shift+c"
 		]
+	},
+	{
+		"command": "add_current_time",
+		"keys":[
+			"alt+shift+n"
+		]
 	}
 ]
