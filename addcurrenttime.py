@@ -12,7 +12,7 @@ class AddCurrentTimeCommand(sublime_plugin.TextCommand):
 		self.view.run_command("insert_snippet",
 			{
 
-				"contents": datetime.datetime.now().strftime("%Y年 %m月 %d日 %H:%M:%S "+ today+" CST")
+				"contents": datetime.datetime.now().strftime("%Y年 %m月 %d日 "+ today +" %H:%M:%S CST")
 
 			}
 		)

@@ -10,9 +10,10 @@ class AddInfoCommand(sublime_plugin.TextCommand):
 		self.view.run_command("insert_snippet",
 			{
 				"contents": "\n--[[""\n"
-				" * @brief: "+fileName+"\n\n"
-				" * @author:	  kun si""\n"
-				" * @date:	"  "%s"  %datetime.datetime.now().strftime("%Y-%m-%d") +"\n"
+				" * @brief:		"+fileName+"\n\n"
+				" * @author:		kun si""\n"
+				" * @email:	  	627795061@qq.com""\n"
+				" * @date:		"  "%s"  %datetime.datetime.now().strftime("%Y-%m-%d") +"\n"
 				"--]]\n\n"
 			}
 		)
