@@ -15,7 +15,6 @@
             },
             {
                 "tags": [
-                    "",
                     // QT Doc Style ("\\") may replace "@" but it's NOT necessary
 
                     // "@addtogroup",                           // GROUP_NAME may be auto-filled (search GROUP_NAME in this file)
@@ -27,22 +26,17 @@
                     // "@date {now:%Y-%m-%dT%H:%M:%S%z}",       // iso format (see https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior)
                     //"@date {now:%Y-%m-%d}",                  // dd-mon-YYYY format
                     "@brief",  // or "@_brief" if you prefer have no explicit @brief (auto-brief approach)
-                    "",
+        
                     // "@details",
                     // "",
-                    "@param",
-                    "",
-                    "@tparam",
-                    "",
+        
                     "@return",
                     //"",
                     //"@throws",
                     //"",
                     //"@\remark Complexity",
-                    "",
-                    "@author    kun si, 627795061@qq.com",
-                    "@date      {now:%Y-%m-%d}",
-                    ""
+                    "@author    kun si, {now:%Y-%m-%d}",
+    
                 ],
                 "context": [
                     { "key": "kind",                                             "operator": "not_equal",  "operand": "" }
