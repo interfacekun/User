@@ -7,12 +7,16 @@
 	[
 		"Anaconda",
 		"BracketHighlighter",
+		"ChineseTranslator",
+		"Ctranslator tool",
 		"Djaneiro",
 		"DoxyDoxygen",
 		"Git",
 		"GitGutter",
+		"Infinidat Plugin",
 		"LuaAutocomplete",
 		"MySQL Snippets",
+		"Nodejs",
 		"Package Control",
 		"SideBarEnhancements",
 		"WakaTime"
